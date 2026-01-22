@@ -266,3 +266,53 @@ Ex:
 5. Reprezentare (nr. real) in virgula fixa/mobila CD,CI,CC
 6. Elaborare in C++ algo. de transformare a numarului din baza in baza
 7. Scaderea/adunarea in calc. 
+
+# Algebra booleana
+
+## Variabile si expresii logice
+Algebra booleana sau algebra logica este un compartiment al matematicii (sau mai mult spus al logicii matematice) care se bazeaza pe legile gandirii - obiectul de studii al logicii clasice. \
+Logica matematica studiaza: Valoarea de adevar a propozitiilor, care reprezinta un enunt despre care putem spune daca are o valoare `True` sau `False`. \
+Algebra booleana poarta numele matematicianului englez George Boole, care in lucrarea sa "Legile gandirii", Publicata in 1853 a pus bazele acestei algebre.\
+Ea a revenit in actualitate odata cu aparitia centralelor telefonice automate si a calculatoarelor numerice. \
+Pe baza acestei teorii a fost creat calculatorul\
+
+Algebra booleana contine:\
+1. Constantele logice 0 si 1
+2. Variabile logice care se noteaza cu litere mici (p,q,x1,x2,x3...xn, etc.) si pot primi valorile 0 sau 1
+3. Vom utiliza operatori logici `not` `and` `or` `xor` `=>` `<=>` `and not` `or not`. 
+4. Cu ajutorul constantelor, variabilelor, operatorilor logici, vom alcatui expresii logice, care pot avea valorile 0 sau 1.
+
+A evalua o expresie logica, inseamna a gasi valoarea ei pentru orice combinatie de valori a variabilelor, din aceasta expresie.\
+Expresia poate avea:\
+1. O variabila - sunt posibile 2 valori `0` sau `1` adica `2^1`
+2. Cu 2 variabile sunt posibile 4 valori adica `2^2` combinatii de valori `0,0` `0,1` `1,0` `1,1`
+3. Cu trei variabile sunt posibile 8 combinatii adica `2^3` combinatii
+4. Cu 4 variabile sunt posibile 16 combinatii `2^4` valori
+
+Pentru a evalua o expresie logica alcatuim un tabel de adevar in care:\
+1. Precautam toate combinatiile de valori ale variabilor
+2. Efectuam intr-o ordine bine stabilita toate operatiile
+3. Pentru fiecare combinatie de valori a variabilelor aflam valoarea expresiilor
+
+Prioritatea operatorilor:\
+1. `not`
+2. `and`
+3. `or`
+
+Exemplu:\
+Expresia E = p or not p or q
+
+Operatori logici cu ajutoror carora vom alcatui expresii logice compuse din mai multi operanzi sunt:\
+1. `not` 
+2. `and`
+3. `or`
+4. =>
+5. <=> 
+6. `xor` 
+
+Definitia operatorilor logici:\
+1. Se numeste conjunctia propozitiilor p si q, asa o propozitie care se noteaza `p and q` sau se noteaza `p & q` sau `p ∧ q` sau `pq` care este `True` cand si p si q sunt adevarate, si falsa in celelalte cazuri.  
+2. Se numeste disjunctia propozitiilor p si q, asa o propozitie care se noteaza `p or q` sau `p v q` care este adevarata cand cel una dintre cele 2 propozitii este adevarata si falsa in toate alte cazuri
+3. P implica q, se noteaza ca `p => q` care are valoarea false daca p este `adevarata` si q `falsa` in toate alte cazuri ea este adevarata. `ATENTIE` p => q asta este echivalent cu `not p and q`
+4. Echivalenta propozitiilor p si q, este o propozitie care se noteaza `p <=> q` care are valoarea `True` daca p si q au `aceleasi` valori si `False` in au valori `diferite`, este egal cu `(not p and q) and (not q and p)` 
+5. P xor q este negarea echivalentei
