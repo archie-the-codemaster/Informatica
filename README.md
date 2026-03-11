@@ -316,3 +316,36 @@ Definitia operatorilor logici:\
 3. P implica q, se noteaza ca `p => q` care are valoarea false daca p este `adevarata` si q `falsa` in toate alte cazuri ea este adevarata. `ATENTIE` p => q asta este echivalent cu `not p and q`
 4. Echivalenta propozitiilor p si q, este o propozitie care se noteaza `p <=> q` care are valoarea `True` daca p si q au `aceleasi` valori si `False` in au valori `diferite`, este egal cu `(not p and q) and (not q and p)` 
 5. P xor q este negarea echivalentei
+
+## Postulate si teoreme
+### Postulatele si teoremele de baza ale algebrei booleene
+Doua expresii logice sunt egale daca valorile lor coincid pentru toate combinatiile posibile ale valorilor variabilelor din expresiile respective\
+`Postulata Nr.1` Elementul de identitate in raport cu `and` este `1` si la `or` este `0`\
+`x and 1 = x`\
+`x or 1 = x`\
+`Postulata Nr.2` Operatorii `and` si `or` respecta legea comutativitatii\
+`Postulata Nr.3` Operatorii `and` si `or` respecta legea distributivitatii\
+`Postulata Nr.4` Pentru negatie se respecta egalitatea `x and not x = 0` si `x or not x = 1`
+
+`Teorema 1` ` x and x = x` si `x or x = x`\
+`Teorema 2` `x and 0 = 0` si `x or 1 = 1`\
+`Teorema 3` `not(not x) = x`\
+`Teorema 4` `(x and y) and z = x and (y and z)` si `x or (y or z) = (x or y) or z`
+`Teorema 5` `x and (x or y) = x` si ` x or (x and y) = 0`
+`Teorema 6` `not(x and y) =  not x and not y` si `not(x or y) = not x or not y`
+
+## Functii logice
+Vom nota prin x1, x2, xn, un grup de variabile boolene unde n = 1,2,3...\
+intrucat fiecare variabila booleana poate avea doar o valoare `0 sau 1`, numarul tuturor combinaliitlor posibile este egal cu `2^n`
+
+### Definitii
+1. Functia logica de n variabile se noteaza cu `y = f(x1,x2,x3,xn)` este o aplicatie care pune in corespondenta fiecare combinatie de valori ale varibilelor `x1,x2...xn` valoarea `0 sau 1` ale varibilei `y`
+2. Variabile `x1,x2,xn` se numesc `variabile independente` sau `argumente`
+3. Variabila `y` este `dependeta` sau `functie la agrumentele x1,x2`
+4. Domeniul de definite `f(x1,x2,x3,xn)`
+5. Tabelul de adevar al functiei logice este un tabel care include toate combinatiile posibile ale `argumentelor` si valorile corespunzatoare ale `variabilei dependente y`
+
+## Forme canonice
+### Disjunctiv normal perfecta
+Min termen P(i) care corespunde cu echivalentul zecimal i, va include inversia variabilei, daca in combinatia in studiu argumentul respectiv are valoarea logica 0 si insusi variabila in caz contrar\
+Ex. 0,0,0,0; Min term P(0), 
